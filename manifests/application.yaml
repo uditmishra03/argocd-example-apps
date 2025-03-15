@@ -12,10 +12,9 @@ spec:
   destination:
     server: https://kubernetes.default.svc
     namespace: kustomize-guestbook
-  spec:
-    syncPolicy:
-      automated:
-        prune: true
-        allowEmpty: true
-      syncOptions:
-        - CreateNamespace=true
+  syncPolicy:
+    automated:
+      prune: true
+      allowEmpty: true
+    syncOptions:
+      - CreateNamespace=true
